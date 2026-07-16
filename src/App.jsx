@@ -9,25 +9,25 @@ function App() {
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
+      <section id="center" className="hero-container">
+        {/* LADO IZQUIERDO: Tu información */}
+        <div className="hero-info">
+          <h1>Hola, soy Frida</h1>
+          <p className="subtitle">Estudiante de Ciencias de la Computación | UNAM</p>
+          <p className="description">
+            Actualmente pasando a 5to semestre. Me apasiona el desarrollo backend, 
+            los sistemas eficientes y la integración práctica de Inteligencia Artificial. 
+            Enfocada en construir soluciones reales y ganar experiencia en la industria.
           </p>
         </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
+
+        {/* LADO DERECHO / SUPERIOR: Tu foto en un círculo */}
+        <div className="hero-avatar-container">
+          <div className="avatar-circle">
+            {/* Cuando tengas tu foto, cambia 'heroImg' por la ruta de tu imagen */}
+            <img src={Thacha-folio/Fotos/perfil-portafolio.jpeg} alt="Mi foto de perfil" className="avatar-img" />
+          </div>
+        </div>
       </section>
 
       <div className="ticks"></div>
@@ -54,63 +54,55 @@ function App() {
             </li>
           </ul>
         </div>
+        
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
+          <h2>Connect with me</h2>
+          <p>Búscame en mis redes o escríbeme por correo</p>
           <ul>
+            {/* 1. MANTENEMOS TU GITHUB */}
             <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+              <a href="https://github.com/Thacha26" target="_blank" rel="noopener noreferrer">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
                 GitHub
               </a>
             </li>
+
             <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
+              <a href="https://www.instagram.com/thacha_1is/" target="_blank" rel="noopener noreferrer">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  {/* Nota: Usamos un icono genérico de red mientras personalizas */}
+                  <use href="/icons.svg#social-icon"></use>
                 </svg>
-                Discord
+                Instagram
               </a>
             </li>
+
+            {/* 3. CORREO ELECTRÓNICO (Reemplaza con tu dirección de correo) */}
             <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
+              <a href="mailto:espinosathais50@gmail.com">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#documentation-icon"></use>
                 </svg>
-                X.com
+                Correo
               </a>
             </li>
+         
             <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
+              <a href='https://www.linkedin.com/in/frida-thais-espinosa-romero?utm_source=share_via&utm_content=profile&utm_medium=member_android' target="_blank" rel="noopener noreferrer"> 
+              <svg className="button-icon" role="presentation" aria-hidden="true">
+                <use href="/icons.svg#social-icon"></use>
+              </svg>
+               linkedin
               </a>
             </li>
           </ul>
         </div>
+
       </section>
 
       <div className="ticks"></div>

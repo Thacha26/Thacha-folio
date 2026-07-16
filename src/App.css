@@ -181,4 +181,66 @@
     right: 0;
     border-right-color: var(--border);
   }
+  /* Contenedor principal en Grid para dividir en dos columnas */
+.hero-container {
+  display: grid;
+  grid-template-columns: 1fr; /* Por defecto una columna en pantallas chicas */
+  gap: 2rem;
+  align-items: center;
+  padding: 3rem 1.5rem;
+  max-w: 900px;
+  margin: 0 auto;
+}
+
+/* En pantallas más grandes (computadoras), se divide en 2 columnas */
+@media (min-width: 768px) {
+  .hero-container {
+    grid-template-columns: 2fr 1fr; /* Más espacio a la info, menos a la foto */
+    text-align: left;
+  }
+}
+
+/* Estilos de los textos */
+.hero-info h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #646cff; /* Color de acento de Vite */
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: #e2e8f0;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Contenedor del avatar */
+.hero-avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Mantiene el círculo en la parte superior derecha */
+}
+
+/* El círculo perfecto */
+.avatar-circle {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%; /* Esto hace el círculo */
+  overflow: hidden; /* Recorta la imagen para que no se salga del círculo */
+  border: 3px solid #646cff; /* Un borde sutil con el color de Vite */
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+/* Asegura que la imagen llene el círculo sin deformarse */
+.avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
 }

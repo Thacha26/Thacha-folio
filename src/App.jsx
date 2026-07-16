@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <section id="center" className="hero-container">
-        {/* LADO IZQUIERDO: Tu información */}
         <div className="hero-info">
           <h1>Hola, soy Frida</h1>
           <p className="subtitle">Estudiante de Ciencias de la Computación | UNAM</p>
@@ -21,10 +20,10 @@ function App() {
           </p>
         </div>
 
-        {/* LADO DERECHO / SUPERIOR: Tu foto en un círculo */}
+        
         <div className="hero-avatar-container">
           <div className="avatar-circle">
-            {/* Cuando tengas tu foto, cambia 'heroImg' por la ruta de tu imagen */}
+            
             <img src={Thacha-folio/Fotos/perfil-portafolio.jpeg} alt="Mi foto de perfil" className="avatar-img" />
           </div>
         </div>
@@ -62,7 +61,7 @@ function App() {
           <h2>Connect with me</h2>
           <p>Búscame en mis redes o escríbeme por correo</p>
           <ul>
-            {/* 1. MANTENEMOS TU GITHUB */}
+            
             <li>
               <a href="https://github.com/Thacha26" target="_blank" rel="noopener noreferrer">
                 <svg className="button-icon" role="presentation" aria-hidden="true">
@@ -75,14 +74,12 @@ function App() {
             <li>
               <a href="https://www.instagram.com/thacha_1is/" target="_blank" rel="noopener noreferrer">
                 <svg className="button-icon" role="presentation" aria-hidden="true">
-                  {/* Nota: Usamos un icono genérico de red mientras personalizas */}
                   <use href="/icons.svg#social-icon"></use>
                 </svg>
                 Instagram
               </a>
             </li>
 
-            {/* 3. CORREO ELECTRÓNICO (Reemplaza con tu dirección de correo) */}
             <li>
               <a href="mailto:espinosathais50@gmail.com">
                 <svg className="button-icon" role="presentation" aria-hidden="true">

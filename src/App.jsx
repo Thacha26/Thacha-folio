@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import perfilImg from './assets/foto-perfil.png'
+import Navbar from './Navbar'
 import './App.css'
 
 function App() {
@@ -10,6 +11,8 @@ function App() {
 
   return (
     <>
+      <Navbar />
+
       <section className="hero-container">
         <div className="profile-container">
           <div className="avatar-container">

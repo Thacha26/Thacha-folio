@@ -4,6 +4,7 @@ import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import perfilImg from './assets/foto-perfil.png'
 import Navbar from './Navbar'
+import ConstellationsBg from './components/ConstellationsBg'
 import './App.css'
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 
   return (
     <>
+      <ConstellationsBg />
       <Navbar />
 
       <section className="hero-container">

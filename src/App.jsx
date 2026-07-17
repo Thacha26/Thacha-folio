@@ -2,6 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
+import perfilImg from './assets/foto-perfil.png'
 import './App.css'
 
 function App() {
@@ -9,52 +10,26 @@ function App() {
 
   return (
     <>
-      <section id="center" className="hero-container">
-        <div className="hero-info">
-          <h1>Hola, soy Frida</h1>
-          <p className="subtitle">Estudiante de Ciencias de la Computación | UNAM</p>
-          <p className="description">
-            Actualmente pasando a 5to semestre. Me apasiona el desarrollo backend, 
-            los sistemas eficientes y la integración práctica de Inteligencia Artificial. 
-            Enfocada en construir soluciones reales y ganar experiencia en la industria.
-          </p>
-        </div>
-
-        
-        <div className="hero-avatar-container">
-          <div className="avatar-circle">
-            
-            <img src={Thacha-folio/Fotos/perfil-portafolio.jpeg} alt="Mi foto de perfil" className="avatar-img" />
+      <section className="hero-container">
+        <div className="profile-container">
+          <div className="avatar-container">
+            <img src={perfilImg} alt="Mi foto de perfil" className="avatar-img" />
+          </div>
+          
+          <div className="profile-info">
+            <h1>Frida Thais Espinosa Romero</h1>
+            <p className="headline">Estudiante de Ciencias de la Computación en la UNAM</p>
+            <p className="description">
+             Tengo 20 años y una gata gorda que me pega
+            </p>
           </div>
         </div>
       </section>
 
       <div className="ticks"></div>
-
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
-            <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
-            </li>
-            <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
-            </li>
-          </ul>
-        </div>
         
-        <div id="social">
+        <section id="social">
+          <div id="docs">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
           </svg>

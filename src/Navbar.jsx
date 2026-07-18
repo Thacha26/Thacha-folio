@@ -27,21 +27,37 @@ function Navbar() {
 
   return (
     <header className="navbar">
-      <span className="navbar-brand">
-        Frida Thais
-        <span className="navbar-cat">
-          <img src={gatitoImg} alt="Icono de gatito" className="navbar-cat-icon" />
+      <div className="navbar-inner">
+        <span className="navbar-brand">
+          Frida Thais
+          <span className="navbar-cat">
+            <img src={gatitoImg} alt="Icono de gatito" className="navbar-cat-icon" />
+          </span>
         </span>
-      </span>
 
-      <button
-        type="button"
-        className="navbar-toggle"
-        onClick={toggleTheme}
-        aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
-      >
-        {theme === 'dark' ? '☀️' : '☾'}
-      </button>
+        <nav className="navbar-menu">
+          <ul className="navbar-links">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#proyects">Projects</a>
+            </li>
+            <li>
+              <a href="#social">Connect</a>
+            </li>
+          </ul>
+        </nav>
+
+        <button
+          type="button"
+          className="navbar-toggle"
+          onClick={toggleTheme}
+          aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
+        >
+          {theme === 'dark' ? '☀️' : '☾'}
+        </button>
+      </div>
     </header>
   )
 }

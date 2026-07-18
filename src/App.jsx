@@ -35,9 +35,6 @@ function App() {
         
         <section id="social">
           <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
           <h2>Connect with me</h2>
           <p>Búscame en mis redes o escríbeme por correo</p>
           <ul>

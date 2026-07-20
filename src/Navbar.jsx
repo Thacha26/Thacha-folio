@@ -55,7 +55,7 @@ function Navbar() {
           onClick={toggleTheme}
           aria-label={theme === 'dark' ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
         >
-          {theme === 'dark' ? '☀️' : '☾'}
+          {theme === 'dark' ? '☪︎' : '⋆☀︎.'}
         </button>
       </div>
     </header>

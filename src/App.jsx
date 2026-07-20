@@ -5,6 +5,7 @@ import heroImg from './assets/hero.png'
 import perfilImg from './assets/foto-perfil.png'
 import Navbar from './Navbar'
 import ConstellationsBg from './components/ConstellationsBg'
+import Projects from './components/Projects'
 import './App.css'
 
 function App() {
@@ -13,6 +14,8 @@ function App() {
   return (
     <>
       <ConstellationsBg />
+
+      <div className="page-content">
       <Navbar />
 
       <section className="hero-container">
@@ -32,13 +35,18 @@ function App() {
       </section>
 
       <div className="ticks"></div>
-        
+
+      <Projects />
+
+      <div className="ticks"></div>
+
         <section id="social">
           <div id="docs">
-          <h2>Connect with me</h2>
-          <p>Búscame en mis redes o escríbeme por correo</p>
+            <h2>Connect with me</h2>
+            <p>Búscame en mis redes o escríbeme por correo</p>
+          </div>
+
           <ul>
-            
             <li>
               <a href="https://github.com/Thacha26" target="_blank" rel="noopener noreferrer">
                 <svg className="button-icon" role="presentation" aria-hidden="true">
@@ -65,22 +73,18 @@ function App() {
                 Correo
               </a>
             </li>
-         
+
             <li>
-              <a href='https://www.linkedin.com/in/frida-thais-espinosa-romero?utm_source=share_via&utm_content=profile&utm_medium=member_android' target="_blank" rel="noopener noreferrer"> 
-              <svg className="button-icon" role="presentation" aria-hidden="true">
-                <use href="/icons.svg#social-icon"></use>
-              </svg>
-               linkedin
+              <a href='https://www.linkedin.com/in/frida-thais-espinosa-romero?utm_source=share_via&utm_content=profile&utm_medium=member_android' target="_blank" rel="noopener noreferrer">
+                <svg className="button-icon" role="presentation" aria-hidden="true">
+                  <use href="/icons.svg#social-icon"></use>
+                </svg>
+                linkedin
               </a>
             </li>
           </ul>
-        </div>
-
-      </section>
-
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+        </section>
+      </div>
     </>
   )
 }

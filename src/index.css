@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  background-color: var(--bg);
+}
+
 :root {
   --nav-h: 72px;
 

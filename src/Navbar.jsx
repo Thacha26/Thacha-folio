@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import './Navbar.css'
 import gatitoImg from './assets/cat-solid-full.svg'
 
@@ -12,6 +12,8 @@ function getInitialTheme() {
 
 function Navbar() {
   const [theme, setTheme] = useState(getInitialTheme)
+  const [hidden, setHidden] = useState(false)
+  const lastScrollY = useRef(0)
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme)
@@ -21,12 +23,26 @@ function Navbar() {
     }
   }, [theme])
 
+  useEffect(() => {
+    lastScrollY.current = window.scrollY
+
+    function onScroll() {
+      const currentScrollY = window.scrollY
+      const scrolledDown = currentScrollY > lastScrollY.current
+      setHidden(scrolledDown && currentScrollY > 120)
+      lastScrollY.current = currentScrollY
+    }
+
+    window.addEventListener('scroll', onScroll, { passive: true })
+    return () => window.removeEventListener('scroll', onScroll)
+  }, [])
+
   const toggleTheme = () => {
     setTheme((prev) => (prev === 'dark' ? 'light' : 'dark'))
   }
 
   return (
-    <header className="navbar">
+    <header className={`navbar ${hidden ? 'navbar-hidden' : ''}`}>
       <div className="navbar-inner">
         <span className="navbar-brand">
           Frida Thais

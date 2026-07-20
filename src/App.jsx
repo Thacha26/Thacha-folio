@@ -42,8 +42,8 @@ function App() {
 
         <section id="social">
           <div id="docs">
-            <h2>Connect with me</h2>
-            <p>Búscame en mis redes o escríbeme por correo</p>
+            <h2>Miau</h2>
+            <p>Miau miau miau!</p>
           </div>
 
           <ul>
@@ -59,7 +59,7 @@ function App() {
             <li>
               <a href="https://www.instagram.com/thacha_1is/" target="_blank" rel="noopener noreferrer">
                 <svg className="button-icon" role="presentation" aria-hidden="true">
-                  <use href="/icons.svg#social-icon"></use>
+                  <use href="/icons.svg#instagram-icon"></use>
                 </svg>
                 Instagram
               </a>
@@ -68,7 +68,7 @@ function App() {
             <li>
               <a href="mailto:espinosathais50@gmail.com">
                 <svg className="button-icon" role="presentation" aria-hidden="true">
-                  <use href="/icons.svg#documentation-icon"></use>
+                  <use href="/icons.svg#gmail-icon"></use>
                 </svg>
                 Correo
               </a>
@@ -77,7 +77,7 @@ function App() {
             <li>
               <a href='https://www.linkedin.com/in/frida-thais-espinosa-romero?utm_source=share_via&utm_content=profile&utm_medium=member_android' target="_blank" rel="noopener noreferrer">
                 <svg className="button-icon" role="presentation" aria-hidden="true">
-                  <use href="/icons.svg#social-icon"></use>
+                  <use href="/icons.svg#linkedin-icon"></use>
                 </svg>
                 linkedin
               </a>

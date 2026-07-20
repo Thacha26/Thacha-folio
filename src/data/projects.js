@@ -1,5 +1,5 @@
 import nexolealImg from '../assets/NEXOLEAL.png'
-
+import raytracerImg from '../assets/ray-tracer.png'
 const projects = [
   {
     name: 'Gatitos Felices',
@@ -33,6 +33,14 @@ const projects = [
     image: 'https://opengraph.githubassets.com/1/Thacha26/Proyecto-Final-de-C',
     tech: ['C'],
   },
+  {
+  name: 'Proyecto final: Ray tracer',
+   description: 'Motor de renderizado 3D mediante simulación de rayos de luz. Procesa escenas, materiales e iluminación para generar imágenes fotorrealistas — al estilo de RenderMan, Cycles y motores 3D modernos.',
+   repoUrl: 'https://github.com/Thacha26/ray-tracer-los-mezcalitos',
+    image: raytracerImg,
+    tech: ['Java', 'Shell'],
+  },
+
 ]
 
 export default projects
